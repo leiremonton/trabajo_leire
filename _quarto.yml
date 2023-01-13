@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs   
+
+
+website:
+  title: "Nombres de hombres y mujeres en España"
+  navbar: 
+    logo: "foto_nombres.jpg"
+    background: pink
+    right:
+      - text: "Trabajo individual"
+        href: blog.qmd
+      - icon: github
+        href: https://github.com/<leiremonton>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario twitter>
+      - icon: envelope
+        url: "mailto:<leimon2@alumni.es>"
+    page-footer: 
+      background: "pink" 
+      left: "© 2022 Leire Montón" #--
+      center: "Hecho con [Quarto](https://quarto.org)"
+ 
+format:
+  html:
+    theme: flatly
+    highlight-style: a11y
+    css: styles.css      
+    page-layout: full
+    toc: true
+    code-copy: true
+    code-overflow: wrap    
+    code-fold: show
+    code-line-numbers: true
+    
+lang: es
+
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>" 
+    fig.asp:  7/9
+    out.width: "95%"
+    fig.align: "center"
+    fig.show: "hold"
+    R.options:
+      options(scipen = 999)
